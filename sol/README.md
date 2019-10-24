@@ -1,6 +1,7 @@
-空投合约使用方法：
-1、先将Airdrop.sol  合约发布，得到空投合约地址：0xcontractaddr
-2 、通过地址A调用ERC20标准合约的approve授信给空投合约地址0xcontractaddr
+
+##空投合约使用方法：
+* 1、先将Airdrop.sol  合约发布，得到空投合约地址：0xcontractaddr
+* 2 、通过地址A调用ERC20标准合约的approve授信给空投合约地址0xcontractaddr
 一定的数量（要空投多少，就授信多少，多授信的数量也没事）
-3、授信成功后，通过地址A调用空投合约地址0xcontractaddr的转账方法（batchTransfer），
+* 3、授信成功后，通过地址A调用空投合约地址0xcontractaddr的转账方法（batchTransfer），
 参数1：要空投的代币合约地址，参数2：接收人地址数组[“0x1”,”0x2”]，参数3：每个地址接收的数量["10000000000000000000","10000000000000000000"].(数量*代币小数位精度)
